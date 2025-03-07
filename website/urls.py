@@ -1,7 +1,8 @@
 from django.urls import path
-from website.views import home, json
+import website.views as wv
 
 urlpatterns = [
-    path('', home),
-    path('json/', json)
+    path('', wv.home),
+    path('contact/', wv.contact),
+    path('about/', wv.about)
 ]
